@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5A53BF962CB775B200C5EADF /* Atoms in Frameworks */ = {isa = PBXBuildFile; productRef = 5A53BF952CB775B200C5EADF /* Atoms */; };
+		5A53BF9A2CB7760700C5EADF /* Engine in Frameworks */ = {isa = PBXBuildFile; productRef = 5A53BF992CB7760700C5EADF /* Engine */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		5A53BF832CB7757300C5EADF /* ViewAliasIssue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewAliasIssue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A53BF9A2CB7760700C5EADF /* Engine in Frameworks */,
+				5A53BF962CB775B200C5EADF /* Atoms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +40,7 @@
 			isa = PBXGroup;
 			children = (
 				5A53BF852CB7757300C5EADF /* ViewAliasIssue */,
+				5A53BF982CB7760700C5EADF /* Frameworks */,
 				5A53BF842CB7757300C5EADF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +51,13 @@
 				5A53BF832CB7757300C5EADF /* ViewAliasIssue.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5A53BF982CB7760700C5EADF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +80,8 @@
 			);
 			name = ViewAliasIssue;
 			packageProductDependencies = (
+				5A53BF952CB775B200C5EADF /* Atoms */,
+				5A53BF992CB7760700C5EADF /* Engine */,
 			);
 			productName = ViewAliasIssue;
 			productReference = 5A53BF832CB7757300C5EADF /* ViewAliasIssue.app */;
@@ -94,6 +111,10 @@
 			);
 			mainGroup = 5A53BF7A2CB7757300C5EADF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5A53BF942CB775B200C5EADF /* XCRemoteSwiftPackageReference "swiftui-atom-properties" */,
+				5A53BF972CB775F700C5EADF /* XCRemoteSwiftPackageReference "Engine" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5A53BF842CB7757300C5EADF /* Products */;
 			projectDirPath = "";
@@ -322,6 +343,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5A53BF942CB775B200C5EADF /* XCRemoteSwiftPackageReference "swiftui-atom-properties" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ra1028/swiftui-atom-properties";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
+		5A53BF972CB775F700C5EADF /* XCRemoteSwiftPackageReference "Engine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nathantannar4/Engine";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A53BF952CB775B200C5EADF /* Atoms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A53BF942CB775B200C5EADF /* XCRemoteSwiftPackageReference "swiftui-atom-properties" */;
+			productName = Atoms;
+		};
+		5A53BF992CB7760700C5EADF /* Engine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A53BF972CB775F700C5EADF /* XCRemoteSwiftPackageReference "Engine" */;
+			productName = Engine;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5A53BF7B2CB7757300C5EADF /* Project object */;
 }

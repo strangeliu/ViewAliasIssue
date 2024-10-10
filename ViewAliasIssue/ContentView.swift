@@ -1,24 +1,24 @@
-//
-//  ContentView.swift
-//  ViewAliasIssue
-//
-//  Created by Jian Liu on 2024/10/10.
-//
-
 import SwiftUI
+import Engine
+import Atoms
 
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+struct SomeAlias: ViewAlias {
+    
+    var defaultBody: some View {
+        Text("Not working 🥲")
     }
 }
 
-#Preview {
-    ContentView()
+public struct ContentView: View {
+    
+    public var body: some View {
+        AtomRoot {
+            ZStack {
+                SomeAlias()
+            }
+            .viewAlias(SomeAlias.self) {
+                Text("It works! 😎")
+            }
+        }
+    }
 }
