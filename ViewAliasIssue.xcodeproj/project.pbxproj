@@ -350,7 +350,7 @@
 			repositoryURL = "https://github.com/ra1028/swiftui-atom-properties";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.7.0;
+				minimumVersion = 0.8.2;
 			};
 		};
 		5A53BF972CB775F700C5EADF /* XCRemoteSwiftPackageReference "Engine" */ = {
@@ -358,7 +358,7 @@
 			repositoryURL = "https://github.com/nathantannar4/Engine";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.8.6;
+				minimumVersion = 2.3.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

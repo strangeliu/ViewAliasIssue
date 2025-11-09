@@ -13,8 +13,10 @@ public struct ContentView: View {
     
     public var body: some View {
         AtomRoot {
-            ZStack {
-                SomeAlias()
+            AtomRoot {
+                ZStack {
+                    SomeAlias()
+                }
             }
             .viewAlias(SomeAlias.self) {
                 Text("It works! 😎")

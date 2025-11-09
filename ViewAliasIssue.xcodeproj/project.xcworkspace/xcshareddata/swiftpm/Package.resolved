@@ -1,22 +1,22 @@
 {
-  "originHash" : "e625a89e03cd242fe5442699d63ec0ee20a68d40ebd26dbb8d2754ab466db405",
+  "originHash" : "fe66f89b7f3b3eaa0e78803505d06d82a7c16903e579ca6e507f79bc6ba1d02d",
   "pins" : [
     {
       "identity" : "engine",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/nathantannar4/Engine",
       "state" : {
-        "revision" : "fafea4c1b310805801eae6fc8e21d3179cf903d7",
-        "version" : "1.8.6"
+        "revision" : "e6118c35b1a5d78a14b2ac311385c695875e044c",
+        "version" : "2.3.0"
       }
     },
     {
       "identity" : "swift-syntax",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-syntax.git",
+      "location" : "https://github.com/swiftlang/swift-syntax",
       "state" : {
-        "revision" : "64889f0c732f210a935a0ad7cda38f77f876262d",
-        "version" : "509.1.1"
+        "revision" : "4799286537280063c85a32f09884cfbca301b1a1",
+        "version" : "602.0.0"
       }
     },
     {
@@ -24,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ra1028/swiftui-atom-properties",
       "state" : {
-        "revision" : "77485a980aeea9022fdcdd7a5c79657c1998fe2e",
-        "version" : "0.7.0"
+        "revision" : "4b5227d41836050132453c54f63a939d8ada1a59",
+        "version" : "0.8.2"
       }
     }
   ],
